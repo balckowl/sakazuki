@@ -3,9 +3,9 @@ import Compare from "./compare"
 
 const Service = () => {
   return (
-    <div>
+    <div className="pb-[100px]">
       {/* heading */}
-      <div className="container pb-[100px]">
+      <div className="container">
         <div className="flex mb-6">
           <div className="inline-block w-2 bg-[#69c2ec] pr-2"></div>
           <div>

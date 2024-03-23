@@ -1,15 +1,14 @@
-
-
 const Compare = () => {
   const companyInfoList = [
-    ["項目A","×","〇","◎"],
-    ["項目B","〇","△","◎"],
-    ["項目C","△","×","〇"],
-    ["項目D","×","〇","◎"],
-  ]
+    ["項目A", "×", "〇", "◎"],
+    ["項目B", "〇", "△", "◎"],
+    ["項目C", "△", "×", "〇"],
+    ["項目D", "×", "〇", "◎"],
+  ];
+
 
   return (
-    <div>
+    <div className="pb-[100px]">
       <div className="container">
         {/* pre-heading */}
         <div className="w-max">
@@ -34,19 +33,18 @@ const Compare = () => {
                 <tr key={index}>
                   {companyInfo.map((score, jndex) => (
                     <td
-                      key={jndex} 
-                      className={`w-[20%] p-3 font-bold border border-blue-300 ${jndex==3 && "bg-yellow-200"}`}>
-
-                        <p className={`text-center ${
-                          score=="×" ? "text-red-500" :
-                          score=="△" ? "text-yellow-500" :
-                          score=="〇" ? "text-green-500" :
-                          score=="◎" && "text-blue-500"}
-                        `
-                          }>{score}</p>
-                      </td>
+                      key={jndex}
+                      className={`w-[20%] p-3 font-bold border border-blue-300 ${jndex == 3 && "bg-yellow-200"}`}>
+                      {score && jndex != 0 ? <img src={
+                        `${score == "×" ? "/images/service/batu.png" :
+                          score == "△" ? "/images/service/sankaku.png" :
+                            score == "〇" ? "/images/service/maru.png" :
+                              score == "◎" && "/images/service/nizyumaru.png"}
+                          `} className="mx-auto w-[30px] h-[30px]" alt={score} /> :
+                        <p className="text-center">{score}</p>
+                      }
+                    </td>
                   ))}
-
                 </tr>
               ))}
             </tbody>
@@ -54,7 +52,7 @@ const Compare = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Compare
+export default Compare;
