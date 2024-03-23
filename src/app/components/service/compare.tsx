@@ -18,7 +18,7 @@ const Compare = () => {
             <div className="h-[4px] bg-[#69c2ec] flex-grow"></div>
           </div>
         </div>
-        <div className="mx-auto w-[80%]">
+        <div className="mx-auto md:w-[80%]">
           <table className="w-full border-collapse border border-blue-300">
             <thead>
               <tr className="bg-blue-200">
