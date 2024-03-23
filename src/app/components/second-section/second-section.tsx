@@ -18,7 +18,7 @@ const SecondSection = () => {
                             <Image src="/images/second-section/certificate.png" width={250} height={50} alt="cer" />
                         </div>
                         <div>
-                            <p className="font-bold md:text-[25px] text-[24px] text-[#1d4592] mb-3">経験や実績が一目でわかる"キャリア証明書"</p>
+                            <p className="font-bold md:text-[25px] text-[24px] text-[#1d4592] mb-3">経験や実績が一目でわかる&quot;キャリア証明書&quot;</p>
                             <p className="text-[12px] md:text-[15px]">第三者証明のあるキャリア証明書で、インターンやイベント参加での経験や実績を。</p>
                         </div>
                     </div>
