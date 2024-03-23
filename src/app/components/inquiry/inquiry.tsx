@@ -50,7 +50,7 @@ const Inquiry = () => {
         acquire: data.acquire,
       };
       try {
-        // await send(serviceId, templateId, params);
+        await send(serviceId, templateId, params);
         toast.success("送信完了");
         reset();
       } catch (e) {
@@ -63,12 +63,12 @@ const Inquiry = () => {
   };
 
   return (
-    <div className="bg-[#69c2ee]">
+    <div>
       <div className="container mx-auto h-[900px]">
         <Toaster />
         <div className="flex items-center justify-center h-full">
           <div className="md:w-[55%] w-full">
-            <h2 className="text-[30px] font-bold mb-[20px]  text-white">
+            <h2 className="text-[30px] font-bold mb-[20px]">
               お問い合わせ
             </h2>
             <form
